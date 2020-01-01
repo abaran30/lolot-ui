@@ -1,0 +1,31 @@
+<table class="table">
+  <thead class="table-header">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col" class="align-middle">Champion</th>
+      <th scope="col" class="align-middle text-center">Mastery Level</th>
+      <th scope="col" class="align-middle">Mastery Points</th>
+      <th scope="col" class="align-middle text-center">Mastery Tokens Earned</th>
+      <th scope="col" class="align-middle text-center">Chest Granted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let championMastery of championMasteries">
+      <td class="align-middle">
+        <img class="champion-square" [src]="getChampionSquareAssetUrl(championMastery.championId)">
+      </td>
+      <td class="align-middle">{{ championMastery.championName }}</td>
+      <td class="align-middle text-center">
+        <img class="champion-mastery-badge" [src]="getChampionMasteryBadgeImgSrc(championMastery.championLevel)">
+      </td>
+      <td class="align-middle">{{ championMastery.championPoints }}</td>
+      <td class="align-middle text-center">
+        <app-champion-mastery-token [championSquareAssetUrl]="getChampionSquareAssetUrl(championMastery.championId)"
+          [currentChampionMasteryLevel]="championMastery.championLevel" [masteryTokensEarned]="championMastery.tokensEarned"></app-champion-mastery-token>
+      </td>
+      <td class="align-middle text-center">
+        <img *ngIf="championMastery.chestGranted" class="chest" src="assets/images/hextech-chest.png">
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit()" #summonerForm="ngForm">
+  <div class="input-group mb-3 lolot-form-group">
+    <input type="text" class="form-control" placeholder="Summoner name" aria-label="Summoner name" required
+      [(ngModel)]="formModel.summonerName" name="summonerName">
+    <div class="input-group-append">
+      <select required [(ngModel)]="formModel.summonerRegion" name="summonerRegion">
+        <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+      </select>
+    </div>
+    <div class="input-group-append search-button">
+      <button type="submit" class="btn btn-primary">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</form>

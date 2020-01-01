@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+select {
+  padding: 5px;
+  width: 4em;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.btn {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

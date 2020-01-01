@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+body {
+  background-attachment: fixed;
+  background-color: black;
+  background-image: url('assets/images/lolot-background.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}

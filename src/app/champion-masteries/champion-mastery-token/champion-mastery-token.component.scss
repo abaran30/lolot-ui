@@ -1,0 +1,14 @@
+@import '../../../variables';
+
+img {
+  border: 2px solid;
+  border-radius: 50%;
+  height: 30px;
+  margin: 0 2px 0 2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.token-container {
+  display: inline-block;
+}
