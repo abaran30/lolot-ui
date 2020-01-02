@@ -27,7 +27,7 @@ export class ChampionMasteriesErrorComponent implements OnInit {
           this.errorMessageLine1 = `Oops! Looks like summoner ${summonerName} has not been found...`;
           this.errorMessageLine2 = 'Please check the name and region, and try again.';
         } else {
-          this.errorMessageLine1 = `Oops! Looks like there has been a server error... `;
+          this.errorMessageLine1 = `Uh oh... Looks like something went wrong on our end... `;
           this.errorMessageLine2 = 'Please try again later.';
         }
       }
