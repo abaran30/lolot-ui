@@ -1,6 +1,7 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChampionMasteriesComponent } from './champion-masteries.component';
+import { ChampionMasteriesComponent } from 'src/app/champion-masteries/champion-masteries.component';
 
 describe('ChampionMasteriesComponent', () => {
   let component: ChampionMasteriesComponent;
@@ -8,9 +9,9 @@ describe('ChampionMasteriesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChampionMasteriesComponent ]
-    })
-    .compileComponents();
+      declarations: [ChampionMasteriesComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

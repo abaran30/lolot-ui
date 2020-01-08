@@ -4,7 +4,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
-import { ChampionMasteriesResponse } from '../models/champion-masteries-response';
+import { ChampionMasteriesResponse } from 'src/app/core/models/champion-masteries-response';
 
 @Injectable()
 export class LolotService {

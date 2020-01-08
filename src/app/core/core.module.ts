@@ -2,10 +2,10 @@ import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { EnsureModuleLoadedOnceGuard } from './ensure-module-loaded-once.guard';
-import { HttpErrorInterceptor } from './http-error-interceptor/http-error-interceptor';
-import { LolAssetService } from './lol-asset-service/lol-asset.service';
-import { LolotService } from './lolot-service/lolot.service';
+import { EnsureModuleLoadedOnceGuard } from 'src/app/core/ensure-module-loaded-once.guard';
+import { HttpErrorInterceptor } from 'src/app/core/http-error-interceptor/http-error-interceptor';
+import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
+import { LolotService } from 'src/app/core/lolot-service/lolot.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule],

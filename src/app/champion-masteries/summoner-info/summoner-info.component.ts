@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { LolAssetService } from '../../core/lol-asset-service/lol-asset.service';
-import { Summoner } from '../../core/models/summoner';
+import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
+import { Summoner } from 'src/app/core/models/summoner';
 
 @Component({
   selector: 'app-summoner-info',

@@ -1,7 +1,7 @@
 import { InMemoryDbService, ParsedRequestUrl, RequestInfoUtilities } from 'angular-in-memory-web-api';
 
-import { mockChampionMasteriesResponse } from './mocks/mock-champion-masteries-response';
-import { mockChampionMasteriesResponseWithTokens } from './mocks/mock-champion-masteries-response-with-tokens';
+import { mockChampionMasteriesResponse } from 'src/app/mocks/mock-champion-masteries-response';
+import { mockChampionMasteriesResponseWithTokens } from 'src/app/mocks/mock-champion-masteries-response-with-tokens';
 
 export class InMemoryLolotService implements InMemoryDbService {
   createDb() {

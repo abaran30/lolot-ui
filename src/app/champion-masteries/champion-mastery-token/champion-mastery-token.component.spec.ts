@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChampionMasteryTokenComponent } from './champion-mastery-token.component';
+import { ChampionMasteryTokenComponent } from 'src/app/champion-masteries/champion-mastery-token/champion-mastery-token.component';
 
 describe('ChampionMasteryTokenComponent', () => {
   let component: ChampionMasteryTokenComponent;

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { ChampionMastery } from '../../core/models/champion-mastery';
-import { LolAssetService } from '../../core/lol-asset-service/lol-asset.service';
+import { ChampionMastery } from 'src/app/core/models/champion-mastery';
+import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
 
 @Component({
   selector: 'app-champion-masteries-table',

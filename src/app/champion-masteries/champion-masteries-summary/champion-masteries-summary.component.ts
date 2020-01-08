@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { ChampionMastery } from '../../core/models/champion-mastery';
+import { ChampionMastery } from 'src/app/core/models/champion-mastery';
 
 @Component({
   selector: 'app-champion-masteries-summary',

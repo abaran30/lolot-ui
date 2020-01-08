@@ -1,4 +1,4 @@
-import { ChampionMasteriesResponse } from '../core/models/champion-masteries-response';
+import { ChampionMasteriesResponse } from 'src/app/core/models/champion-masteries-response';
 
 export const mockChampionMasteriesResponse: ChampionMasteriesResponse = {
   'summoner': {

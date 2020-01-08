@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { HttpErrorInterceptor } from './http-error-interceptor';
+import { HttpErrorInterceptor } from 'src/app/core/http-error-interceptor/http-error-interceptor';
 
 describe('HttpErrorInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({

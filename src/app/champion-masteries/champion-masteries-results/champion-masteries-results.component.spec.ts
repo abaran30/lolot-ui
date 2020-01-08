@@ -4,9 +4,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { of } from 'rxjs';
 
-import { ChampionMasteriesResultsComponent } from './champion-masteries-results.component';
-import { mockChampionMasteriesResponse } from '../../mocks/mock-champion-masteries-response';
-import { LolotService } from '../../core/lolot-service/lolot.service';
+import { ChampionMasteriesResultsComponent } from 'src/app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
+import { mockChampionMasteriesResponse } from 'src/app/mocks/mock-champion-masteries-response';
+import { LolotService } from 'src/app/core/lolot-service/lolot.service';
 
 describe('ChampionMasteriesResultsComponent', () => {
   let component: ChampionMasteriesResultsComponent;
