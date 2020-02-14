@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 
 import { ChampionMastery } from 'src/app/core/models/champion-mastery';
-import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
 
 @Component({
   selector: 'app-champion-masteries-table',
@@ -10,14 +9,6 @@ import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.servic
 })
 export class ChampionMasteriesTableComponent {
   @Input() championMasteries: ChampionMastery[];
-
-  constructor(
-    private lolAssetService: LolAssetService
-  ) { }
-
-  getChampionSquareAssetUrl(championId: string): string {
-    return this.lolAssetService.getChampionSquareAssetUrl(championId);
-  }
 
   getChampionMasteryBadgeImgSrc(championMasteryLevel: number): string {
     return `assets/images/champion-mastery-badge-${championMasteryLevel}.png`;

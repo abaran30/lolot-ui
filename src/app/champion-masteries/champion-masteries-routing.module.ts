@@ -20,6 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ChampionMasteriesRoutingModule {
-  static components = [ChampionMasteriesComponent];
-}
+export class ChampionMasteriesRoutingModule { }

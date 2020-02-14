@@ -1,6 +1,7 @@
 export interface Summoner {
-  name: string,
-  profileIconId: number,
-  revisionDate: number,
-  summonerLevel: number
+  name: string;
+  profileIconId: number;
+  revisionDate: number;
+  summonerLevel: number;
+  profileIconUrl: string;
 }

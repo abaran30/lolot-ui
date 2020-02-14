@@ -1,12 +1,17 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { of } from 'rxjs';
+import { take } from 'rxjs/operators';
 
-import { ChampionMasteriesResultsComponent } from 'src/app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
-import { mockChampionMasteriesResponse } from 'src/app/mocks/mock-champion-masteries-response';
+import {
+  ChampionMasteriesResultsComponent
+} from 'src/app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
 import { LolotService } from 'src/app/core/lolot-service/lolot.service';
+import { mockChampionMasteriesResponse } from 'src/app/mocks/mock-champion-masteries-response';
+
 
 describe('ChampionMasteriesResultsComponent', () => {
   let component: ChampionMasteriesResultsComponent;
@@ -22,6 +27,15 @@ describe('ChampionMasteriesResultsComponent', () => {
       declarations: [ChampionMasteriesResultsComponent],
       imports: [RouterTestingModule],
       providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            queryParams: of({
+              summonerName: 'AngryTaco',
+              summonerRegion: 'NA'
+            })
+          }
+        },
         { provide: LolotService, useValue: lolotService }
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -37,5 +51,17 @@ describe('ChampionMasteriesResultsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
 
+  it('should request Champion Masteries', () => {
+    expect(getChampionMasteriesForSummonerSpy).toHaveBeenCalledWith('AngryTaco', 'NA');
+  });
+
+  it('should get Champion Masteries response', () => {
+    component.championMasteriesResponse$.pipe(take(1)).subscribe(
+      championMasteriesResponse => {
+        expect(championMasteriesResponse.summoner).toEqual(mockChampionMasteriesResponse.summoner);
+        expect(championMasteriesResponse.championMasteries).toEqual(mockChampionMasteriesResponse.championMasteries);
+      }
+    );
+  });
+});

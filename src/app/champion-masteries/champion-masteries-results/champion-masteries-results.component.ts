@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Observable, Subscription } from 'rxjs';
@@ -11,7 +11,7 @@ import { LolotService } from 'src/app/core/lolot-service/lolot.service';
   templateUrl: './champion-masteries-results.component.html',
   styleUrls: ['./champion-masteries-results.component.scss']
 })
-export class ChampionMasteriesResultsComponent implements OnInit {
+export class ChampionMasteriesResultsComponent implements OnInit, OnDestroy {
   championMasteriesResponse$: Observable<ChampionMasteriesResponse>;
   routeParamsSubscription: Subscription;
 

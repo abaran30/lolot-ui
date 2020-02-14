@@ -4,14 +4,11 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { EnsureModuleLoadedOnceGuard } from 'src/app/core/ensure-module-loaded-once.guard';
 import { HttpErrorInterceptor } from 'src/app/core/http-error-interceptor/http-error-interceptor';
-import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
-import { LolotService } from 'src/app/core/lolot-service/lolot.service';
 
 @NgModule({
-  imports: [CommonModule, HttpClientModule],
-  providers: [
-    LolAssetService,
-    LolotService
+  imports: [
+    CommonModule,
+    HttpClientModule
   ]
 })
 export class CoreModule extends EnsureModuleLoadedOnceGuard { // Ensure that CoreModule is only loaded into AppModule

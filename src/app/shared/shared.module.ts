@@ -9,7 +9,12 @@ import { AppNavbarComponent } from 'src/app/shared/app-navbar/app-navbar.compone
 import { LoadingSpinnerComponent } from 'src/app/shared/loading-spinner/loading-spinner.component';
 
 @NgModule({
-  declarations: [SummonerFormComponent, AppLogoComponent, AppNavbarComponent, LoadingSpinnerComponent],
+  declarations: [
+    AppLogoComponent,
+    AppNavbarComponent,
+    LoadingSpinnerComponent,
+    SummonerFormComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

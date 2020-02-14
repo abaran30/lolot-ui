@@ -25,4 +25,11 @@ describe('ChampionMasteriesSummaryComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should calculate Champion Masteries summary', () => {
+    expect(component.numberOfChestsAcquired).toEqual(2);
+    expect(component.numberOfLevel7Masteries).toEqual(1);
+    expect(component.numberOfLevel6Masteries).toEqual(13);
+    expect(component.numberOfLevel5Masteries).toEqual(10);
+  });
 });

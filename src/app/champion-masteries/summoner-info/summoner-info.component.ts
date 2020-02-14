@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-import { LolAssetService } from 'src/app/core/lol-asset-service/lol-asset.service';
 import { Summoner } from 'src/app/core/models/summoner';
 
 @Component({
@@ -10,12 +9,4 @@ import { Summoner } from 'src/app/core/models/summoner';
 })
 export class SummonerInfoComponent {
   @Input() summoner: Summoner;
-
-  constructor(
-    private lolAssetService: LolAssetService
-  ) { }
-
-  getSummonerProfileIconUrl() {
-    return this.lolAssetService.getSummonerProfileIconUrl(this.summoner.profileIconId);
-  }
 }

@@ -18,18 +18,16 @@ export class HttpErrorInterceptor implements HttpInterceptor {
   ) { }
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    return next.handle(request)
-      .pipe(
-        catchError((error: HttpErrorResponse) => {
-          const navigationExtras: NavigationExtras = {
-            queryParams: { errorCode: error.status },
-            queryParamsHandling: 'merge'
-          };
+    return next.handle(request).pipe(
+      catchError((error: HttpErrorResponse) => {
+        const navigationExtras: NavigationExtras = {
+          queryParams: { errorCode: error.status },
+          queryParamsHandling: 'merge'
+        };
 
-          this.router.navigate(['champion-masteries', 'error'], navigationExtras);
-
-          return throwError(error);
-        })
-      );
+        this.router.navigate(['champion-masteries', 'error'], navigationExtras);
+        return throwError(error);
+      })
+    );
   }
 }

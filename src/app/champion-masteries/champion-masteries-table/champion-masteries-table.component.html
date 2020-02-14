@@ -12,7 +12,7 @@
   <tbody>
     <tr *ngFor="let championMastery of championMasteries">
       <td class="align-middle">
-        <img class="champion-square" [src]="getChampionSquareAssetUrl(championMastery.championId)">
+        <img class="champion-square" [src]="championMastery.championSquareAssetUrl">
       </td>
       <td class="align-middle">{{ championMastery.championName }}</td>
       <td class="align-middle text-center">
@@ -20,8 +20,9 @@
       </td>
       <td class="align-middle">{{ championMastery.championPoints }}</td>
       <td class="align-middle text-center">
-        <app-champion-mastery-token [championSquareAssetUrl]="getChampionSquareAssetUrl(championMastery.championId)"
-          [currentChampionMasteryLevel]="championMastery.championLevel" [masteryTokensEarned]="championMastery.tokensEarned"></app-champion-mastery-token>
+        <app-champion-mastery-token [championSquareAssetUrl]="championMastery.championSquareAssetUrl"
+          [currentChampionMasteryLevel]="championMastery.championLevel"
+          [masteryTokensEarned]="championMastery.tokensEarned"></app-champion-mastery-token>
       </td>
       <td class="align-middle text-center">
         <img *ngIf="championMastery.chestGranted" class="chest" src="assets/images/hextech-chest.png">

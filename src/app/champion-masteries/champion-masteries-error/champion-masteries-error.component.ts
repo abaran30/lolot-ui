@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Subscription } from 'rxjs';
@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './champion-masteries-error.component.html',
   styleUrls: ['./champion-masteries-error.component.scss']
 })
-export class ChampionMasteriesErrorComponent implements OnInit {
+export class ChampionMasteriesErrorComponent implements OnInit, OnDestroy {
   errorMessageLine1: string;
   errorMessageLine2: string;
   routeParamsSubscription: Subscription;
