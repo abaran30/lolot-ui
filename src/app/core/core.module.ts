@@ -17,7 +17,7 @@ export class CoreModule extends EnsureModuleLoadedOnceGuard { // Ensure that Cor
     super(parentModule);
   }
 
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
       providers: [
