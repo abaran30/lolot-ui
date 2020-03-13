@@ -1,4 +1,4 @@
 export const environment = {
-  lolotApiBaseUrl: 'http://localhost:3030',
+  lolotApiBaseUrl: 'https://lolot-api.herokuapp.com',
   production: true
 };
