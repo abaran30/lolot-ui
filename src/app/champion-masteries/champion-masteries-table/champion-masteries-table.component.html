@@ -18,7 +18,7 @@
       <td class="align-middle text-center">
         <img class="champion-mastery-badge" [src]="getChampionMasteryBadgeImgSrc(championMastery.championLevel)">
       </td>
-      <td class="align-middle">{{ championMastery.championPoints }}</td>
+      <td class="align-middle">{{ championMastery.championPoints | number }}</td>
       <td class="align-middle text-center">
         <app-champion-mastery-token [championSquareAssetUrl]="championMastery.championSquareAssetUrl"
           [currentChampionMasteryLevel]="championMastery.championLevel"
