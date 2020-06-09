@@ -5,8 +5,7 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-champion-masteries-error',
-  templateUrl: './champion-masteries-error.component.html',
-  styleUrls: ['./champion-masteries-error.component.scss']
+  templateUrl: './champion-masteries-error.component.html'
 })
 export class ChampionMasteriesErrorComponent implements OnInit, OnDestroy {
   errorMessageLine1: string;

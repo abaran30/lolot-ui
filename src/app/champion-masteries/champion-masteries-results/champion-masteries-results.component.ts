@@ -8,8 +8,7 @@ import { LolotService } from 'src/app/core/lolot-service/lolot.service';
 
 @Component({
   selector: 'app-champion-masteries-results',
-  templateUrl: './champion-masteries-results.component.html',
-  styleUrls: ['./champion-masteries-results.component.scss']
+  templateUrl: './champion-masteries-results.component.html'
 })
 export class ChampionMasteriesResultsComponent implements OnInit, OnDestroy {
   championMasteriesResponse$: Observable<ChampionMasteriesResponse>;

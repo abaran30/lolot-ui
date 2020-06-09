@@ -1,5 +1,5 @@
 <div *ngIf="championMasteriesResponse$ | async; let championMasteriesResponse; else loading">
-  <div class="summoner-info-container row">
+  <div class="row my-4">
     <div class="col-md-auto">
       <app-summoner-info [summoner]="championMasteriesResponse.summoner"></app-summoner-info>
     </div>
@@ -12,7 +12,7 @@
   </app-champion-masteries-table>
 </div>
 <ng-template #loading>
-  <div class="loading-spinner-container">
+  <div class="mt-5">
     <app-loading-spinner></app-loading-spinner>
   </div>
 </ng-template>
