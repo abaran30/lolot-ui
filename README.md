@@ -1,27 +1,61 @@
-# LolotUi
+# LOLOT UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+LOLOT is a web application that allows *League of Legends* players to keep track of their Hextech Chest rewards via Champion Mastery for the current season.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This web application was developed using [Angular](https://angular.io/).
 
-## Code scaffolding
+## Configuration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Set Up and Run Locally
+### Prerequisites
++ Make sure the aforementioned **Configuration** options have been addressed.
++ Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), and [npm](https://www.npmjs.com/) are installed and configured on your machine.
 
-## Build
+### Steps - Mock Data
+1. Clone this repository to a location of your choosing with:
+``` bash
+git clone https://github.com/abaran30/lolot-ui.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Inside the cloned directory, run:
+``` bash
+npm install
+```
 
-## Running unit tests
+3. Once the npm packages have been installed, run:
+``` bash
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. The web application will start locally on http://localhost:4200.
 
-## Running end-to-end tests
+### Steps - Live Data with LOLOT API
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Perform Steps 1 and 2 in **Steps - Mock Data**.
 
-## Further help
+2. Remove the following import from `app.module.ts`:
+``` typescript
+environment.production ? [] : HttpClientInMemoryWebApiModule.forRoot(InMemoryLolotService)
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Setup the [LOLOT API](https://github.com/abaran30/lolot-api) by following **How to Set Up and Run Locally**.
+
+4. Once the LOLOT API is running on http://localhost:3030, run:
+``` bash
+npm start
+```
+
+5. The web application will start locally on http://localhost:4200.
+
+## Testing
+
+To run the unit tests, run:
+``` bash
+npm test
+```
+
+## Disclaimer
+
+LOLOT isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
