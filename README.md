@@ -8,8 +8,6 @@ LOLOT is currently available via URL https://lolot-ui.herokuapp.com/.
 
 This web application was developed using [Angular](https://angular.io/).
 
-## Configuration
-
 ## How to Set Up and Run Locally
 ### Prerequisites
 + Make sure the aforementioned **Configuration** options have been addressed.
