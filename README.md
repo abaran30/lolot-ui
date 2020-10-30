@@ -10,7 +10,6 @@ This web application was developed using [Angular](https://angular.io/).
 
 ## How to Set Up and Run Locally
 ### Prerequisites
-+ Make sure the aforementioned **Configuration** options have been addressed.
 + Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), and [npm](https://www.npmjs.com/) are installed and configured on your machine.
 
 ### Steps - Mock Data
