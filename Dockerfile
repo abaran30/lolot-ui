@@ -3,7 +3,7 @@ FROM node:12.16.1-alpine3.11 as app-builder
 WORKDIR /opt/app
 COPY . /opt/app
 
-RUN npm i
+RUN npm i --no-optional
 RUN npm run build-prod
 
 FROM nginx:1.17.8-alpine

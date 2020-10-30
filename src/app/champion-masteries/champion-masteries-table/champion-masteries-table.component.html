@@ -12,20 +12,20 @@
   <tbody>
     <tr data-cy="champion-mastery-row" *ngFor="let championMastery of championMasteries">
       <td class="align-middle">
-        <img class="champion-square" [src]="championMastery.championSquareAssetUrl">
+        <img class="champion-square" data-cy="champion-square" [src]="championMastery.championSquareAssetUrl">
       </td>
-      <td class="align-middle">{{ championMastery.championName }}</td>
+      <td class="align-middle" data-cy="champion-name">{{ championMastery.championName }}</td>
       <td class="align-middle text-center">
-        <img class="champion-mastery-badge" [src]="getChampionMasteryBadgeImgSrc(championMastery.championLevel)">
+        <img class="champion-mastery-badge" data-cy="champion-mastery-badge" [src]="getChampionMasteryBadgeImgSrc(championMastery.championLevel)">
       </td>
-      <td class="align-middle">{{ championMastery.championPoints | number }}</td>
+      <td class="align-middle" data-cy="champion-mastery-points">{{ championMastery.championPoints | number }}</td>
       <td class="align-middle text-center">
         <app-champion-mastery-token [championSquareAssetUrl]="championMastery.championSquareAssetUrl"
           [currentChampionMasteryLevel]="championMastery.championLevel"
           [masteryTokensEarned]="championMastery.tokensEarned"></app-champion-mastery-token>
       </td>
-      <td class="align-middle text-center">
-        <img *ngIf="championMastery.chestGranted" class="chest" src="assets/images/hextech-chest.png">
+      <td class="align-middle text-center" data-cy="hextech-chest-granted-col">
+        <img *ngIf="championMastery.chestGranted" class="chest" data-cy="hextech-chest-granted" src="assets/images/hextech-chest.png">
       </td>
     </tr>
   </tbody>
