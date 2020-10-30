@@ -5,11 +5,11 @@ import {
   HttpInterceptor,
   HttpRequest
 } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HttpErrorInterceptor implements HttpInterceptor {

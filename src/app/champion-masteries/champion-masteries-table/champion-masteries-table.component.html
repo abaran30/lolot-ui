@@ -10,7 +10,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let championMastery of championMasteries">
+    <tr data-cy="champion-mastery-row" *ngFor="let championMastery of championMasteries">
       <td class="align-middle">
         <img class="champion-square" [src]="championMastery.championSquareAssetUrl">
       </td>

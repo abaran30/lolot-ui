@@ -1,14 +1,15 @@
 {
   "name": "lolot-ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --no-watch",
+    "test-watch": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "cypress:open": "cypress open"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,7 @@
     "@types/node": "^12.11.1",
     "angular-in-memory-web-api": "^0.8.0",
     "codelyzer": "^5.1.2",
+    "cypress": "^5.5.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",

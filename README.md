@@ -56,6 +56,12 @@ To run the unit tests, run:
 npm test
 ```
 
+To run the UI tests, start the application locally ***with mock data*** following **How to Set Up and Run Locally**. Once the web application is running on `http://localhost:4200`, run:
+``` bash
+npm run cypress:open
+```
+This will open Cypress and allow you to run the desired UI tests.
+
 ## Disclaimer
 
 LOLOT isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
