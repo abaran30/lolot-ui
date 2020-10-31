@@ -39,7 +39,17 @@ Cypress.Commands.add('testMasteryPointsAtIndex', (index, masteryPointsStringToCo
   cy.get('[data-cy=champion-mastery-points]').eq(index).should('contain', masteryPointsStringToContain);
 });
 
-// TODO: Add test for Champion Mastery tokens
+Cypress.Commands.add('testMasteryTokensAtIndex', (index, length, urlToContain = undefined, borderColorToContain = undefined) => {
+  if (length === 0) {
+    cy.get('[data-cy=champion-mastery-tokens-row]').eq(index).children().first().children().should('have.length', 0);
+  } else {
+    const championMasteryTokensElements = cy.get('[data-cy=champion-mastery-tokens-row]').eq(index).children().first().children().first().children();
+    championMasteryTokensElements.should('have.length', length);
+    championMasteryTokensElements.first().children().first().
+      should('have.attr', 'src', urlToContain).
+      should('have.css', 'border-color', borderColorToContain);
+  }
+});
 
 Cypress.Commands.add('testHextechChestAcquiredAtIndex', (index, expectedToExist) => {
   cy.get('[data-cy=champion-mastery-row]').eq(index).
