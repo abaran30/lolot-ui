@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Summoner } from 'src/app/core/models/summoner';
+import { Summoner } from '@app/core/models/summoner';
 
 @Component({
   selector: 'app-summoner-info',

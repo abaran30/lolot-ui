@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { SummonerFormComponent } from 'src/app/shared/summoner-form/summoner-form.component';
+import { SummonerFormComponent } from '@app/shared/summoner-form/summoner-form.component';
 
 describe('SummonerFormComponent', () => {
   let component: SummonerFormComponent;

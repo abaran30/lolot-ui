@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { ChampionMastery } from 'src/app/core/models/champion-mastery';
+import { ChampionMastery } from '@app/core/models/champion-mastery';
 
 @Pipe({
   name: 'championSearch'

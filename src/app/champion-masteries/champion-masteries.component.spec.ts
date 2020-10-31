@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChampionMasteriesComponent } from 'src/app/champion-masteries/champion-masteries.component';
+import { ChampionMasteriesComponent } from '@app/champion-masteries/champion-masteries.component';
 
 describe('ChampionMasteriesComponent', () => {
   let component: ChampionMasteriesComponent;

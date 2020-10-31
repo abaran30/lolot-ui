@@ -1,7 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { LolotService } from 'src/app/core/lolot-service/lolot.service';
+import { LolotService } from '@app/core/lolot-service/lolot.service';
 
 describe('LolotService', () => {
   beforeEach(() => TestBed.configureTestingModule({

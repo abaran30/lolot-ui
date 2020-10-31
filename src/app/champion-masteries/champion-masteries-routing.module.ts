@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ChampionMasteriesComponent } from 'src/app/champion-masteries/champion-masteries.component';
-import { ChampionMasteriesErrorComponent } from 'src/app/champion-masteries/champion-masteries-error/champion-masteries-error.component';
+import { ChampionMasteriesComponent } from '@app/champion-masteries/champion-masteries.component';
+import { ChampionMasteriesErrorComponent } from '@app/champion-masteries/champion-masteries-error/champion-masteries-error.component';
 import {
   ChampionMasteriesResultsComponent
-} from 'src/app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
+} from '@app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
 
 const routes: Routes = [
   {

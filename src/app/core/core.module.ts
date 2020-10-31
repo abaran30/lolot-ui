@@ -2,8 +2,8 @@ import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { EnsureModuleLoadedOnceGuard } from 'src/app/core/ensure-module-loaded-once.guard';
-import { HttpErrorInterceptor } from 'src/app/core/http-error-interceptor/http-error-interceptor';
+import { EnsureModuleLoadedOnceGuard } from '@app/core/ensure-module-loaded-once.guard';
+import { HttpErrorInterceptor } from '@app/core/http-error-interceptor/http-error-interceptor';
 
 @NgModule({
   imports: [

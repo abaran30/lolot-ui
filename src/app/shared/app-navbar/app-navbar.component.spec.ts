@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppNavbarComponent } from 'src/app/shared/app-navbar/app-navbar.component';
+import { AppNavbarComponent } from '@app/shared/app-navbar/app-navbar.component';
 
 describe('AppNavbarComponent', () => {
   let component: AppNavbarComponent;

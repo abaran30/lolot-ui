@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Observable, Subscription } from 'rxjs';
 
-import { ChampionMasteriesResponse } from 'src/app/core/models/champion-masteries-response';
-import { LolotService } from 'src/app/core/lolot-service/lolot.service';
+import { ChampionMasteriesResponse } from '@app/core/models/champion-masteries-response';
+import { LolotService } from '@app/core/lolot-service/lolot.service';
 
 @Component({
   selector: 'app-champion-masteries-results',

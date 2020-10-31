@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppFooterComponent } from 'src/app/app-footer/app-footer.component';
+import { AppFooterComponent } from '@app/app-footer/app-footer.component';
 
 describe('AppFooterComponent', () => {
   let component: AppFooterComponent;

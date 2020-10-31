@@ -8,9 +8,9 @@ import { take } from 'rxjs/operators';
 
 import {
   ChampionMasteriesResultsComponent
-} from 'src/app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
-import { LolotService } from 'src/app/core/lolot-service/lolot.service';
-import { mockChampionMasteriesResponse } from 'src/app/mocks/mock-champion-masteries-response';
+} from '@app/champion-masteries/champion-masteries-results/champion-masteries-results.component';
+import { LolotService } from '@app/core/lolot-service/lolot.service';
+import { mockChampionMasteriesResponse } from '@app/mocks/mock-champion-masteries-response';
 
 
 describe('ChampionMasteriesResultsComponent', () => {

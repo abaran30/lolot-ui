@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import {
   ChampionMasteriesSummaryComponent
-} from 'src/app/champion-masteries/champion-masteries-summary/champion-masteries-summary.component';
-import { mockChampionMasteriesResponseWithTokens } from 'src/app/mocks/mock-champion-masteries-response-with-tokens';
+} from '@app/champion-masteries/champion-masteries-summary/champion-masteries-summary.component';
+import { mockChampionMasteriesResponseWithTokens } from '@app/mocks/mock-champion-masteries-response-with-tokens';
 
 describe('ChampionMasteriesSummaryComponent', () => {
   let component: ChampionMasteriesSummaryComponent;

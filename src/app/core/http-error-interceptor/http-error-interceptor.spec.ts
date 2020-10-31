@@ -6,9 +6,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { take } from 'rxjs/operators';
 
-import { HttpErrorInterceptor } from 'src/app/core/http-error-interceptor/http-error-interceptor';
-import { LolotService } from 'src/app/core/lolot-service/lolot.service';
-import { environment } from 'src/environments/environment';
+import { HttpErrorInterceptor } from '@app/core/http-error-interceptor/http-error-interceptor';
+import { LolotService } from '@app/core/lolot-service/lolot.service';
+import { environment } from '@environments/environment';
 
 describe('HttpErrorInterceptor', () => {
   let httpTestingController: HttpTestingController;

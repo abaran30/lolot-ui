@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 
-import { ChampionMasteriesRequest } from 'src/app/core/models/champion-masteries-request';
+import { ChampionMasteriesRequest } from '@app/core/models/champion-masteries-request';
 
 @Component({
   selector: 'app-summoner-form',

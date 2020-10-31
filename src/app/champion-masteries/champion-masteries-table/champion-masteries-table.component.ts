@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ChampionMastery } from 'src/app/core/models/champion-mastery';
+import { ChampionMastery } from '@app/core/models/champion-mastery';
 
 @Component({
   selector: 'app-champion-masteries-table',

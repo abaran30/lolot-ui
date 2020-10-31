@@ -1,6 +1,6 @@
-import { ChampionSearchPipe } from 'src/app/champion-masteries/champion-search-pipe/champion-search.pipe';
+import { ChampionSearchPipe } from '@app/champion-masteries/champion-search-pipe/champion-search.pipe';
 
-import { mockChampionMasteriesResponseWithTokens } from 'src/app/mocks/mock-champion-masteries-response-with-tokens';
+import { mockChampionMasteriesResponseWithTokens } from '@app/mocks/mock-champion-masteries-response-with-tokens';
 
 describe('ChampionSearchPipe', () => {
   it('create an instance', () => {

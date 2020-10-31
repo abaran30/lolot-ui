@@ -3,8 +3,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { ChampionMasteriesResponse } from 'src/app/core/models/champion-masteries-response';
-import { environment } from 'src/environments/environment';
+import { ChampionMasteriesResponse } from '@app/core/models/champion-masteries-response';
+import { environment } from '@environments/environment';
 
 @Injectable({
   providedIn: 'root'

@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { of } from 'rxjs';
 
-import { ChampionMasteriesErrorComponent } from 'src/app/champion-masteries/champion-masteries-error/champion-masteries-error.component';
+import { ChampionMasteriesErrorComponent } from '@app/champion-masteries/champion-masteries-error/champion-masteries-error.component';
 
 describe('ChampionMasteriesErrorComponent', () => {
   let component: ChampionMasteriesErrorComponent;
