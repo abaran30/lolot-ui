@@ -23,6 +23,8 @@ import { LoadingSpinnerComponent } from 'src/app/shared/loading-spinner/loading-
   exports: [
     AppLogoComponent,
     AppNavbarComponent,
+    CommonModule,
+    FormsModule,
     LoadingSpinnerComponent,
     SummonerFormComponent
   ]

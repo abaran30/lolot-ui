@@ -1,7 +1,9 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { ChampionMasteriesTableComponent } from 'src/app/champion-masteries/champion-masteries-table/champion-masteries-table.component';
+import { ChampionSearchPipe } from 'src/app/champion-masteries/champion-search-pipe/champion-search.pipe';
 
 describe('ChampionMasteriesTableComponent', () => {
   let component: ChampionMasteriesTableComponent;
@@ -9,7 +11,11 @@ describe('ChampionMasteriesTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ChampionMasteriesTableComponent],
+      declarations: [
+        ChampionMasteriesTableComponent,
+        ChampionSearchPipe
+      ],
+      imports: [FormsModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));

@@ -9,6 +9,7 @@ import { ChampionMastery } from 'src/app/core/models/champion-mastery';
 })
 export class ChampionMasteriesTableComponent {
   @Input() championMasteries: ChampionMastery[];
+  championSearchText: string;
 
   getChampionMasteryBadgeImgSrc(championMasteryLevel: number): string {
     return `assets/images/champion-mastery-badge-${championMasteryLevel}.png`;

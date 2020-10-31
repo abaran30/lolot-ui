@@ -1,3 +1,4 @@
+<input type="text" class="form-control mb-1" placeholder="Search by Champion name" aria-label="Champion name" [(ngModel)]="championSearchText">
 <table class="table">
   <thead class="table-header">
     <tr>
@@ -10,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr data-cy="champion-mastery-row" *ngFor="let championMastery of championMasteries">
+    <tr data-cy="champion-mastery-row" *ngFor="let championMastery of championMasteries | championSearch: championSearchText">
       <td class="align-middle">
         <img class="champion-square" data-cy="champion-square" [src]="championMastery.championSquareAssetUrl">
       </td>
