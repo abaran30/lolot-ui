@@ -15,12 +15,4 @@ export class ChampionMasteryTokenComponent implements OnInit {
   ngOnInit() {
     this.numberOfTokensArray = Array(this.masteryTokensEarned).fill(0).map((value, index) => index);
   }
-
-  getMasteryTokenBorderColor(): string {
-    if (this.currentChampionMasteryLevel === 5) {
-      return '#F24AD7';
-    } else {
-      return '#49B9B9';
-    }
-  }
 }

@@ -17,7 +17,7 @@
       </td>
       <td class="align-middle" data-cy="champion-name">{{ championMastery.championName }}</td>
       <td class="align-middle text-center">
-        <img class="champion-mastery-badge" data-cy="champion-mastery-badge" [src]="getChampionMasteryBadgeImgSrc(championMastery.championLevel)">
+        <img class="champion-mastery-badge" data-cy="champion-mastery-badge" [src]="'assets/images/champion-mastery-badge-' + championMastery.championLevel + '.png'">
       </td>
       <td class="align-middle" data-cy="champion-mastery-points">{{ championMastery.championPoints | number }}</td>
       <td class="align-middle text-center" data-cy="champion-mastery-tokens-row">

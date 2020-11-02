@@ -38,12 +38,4 @@ describe('ChampionMasteryTokenComponent', () => {
     component.ngOnInit();
     expect(component.numberOfTokensArray).toEqual([0]);
   });
-
-  it('should get the Champion mastery token color', () => {
-    component.currentChampionMasteryLevel = mockChampionMasteriesResponseWithTokens.championMasteries[0].championLevel;
-    expect(component.getMasteryTokenBorderColor()).toEqual('#49B9B9');
-
-    component.currentChampionMasteryLevel = mockChampionMasteriesResponseWithTokens.championMasteries[5].championLevel;
-    expect(component.getMasteryTokenBorderColor()).toEqual('#F24AD7');
-  });
 });
