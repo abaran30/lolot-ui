@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 
 import { ChampionMasteriesTableComponent } from '@app/champion-masteries/champion-masteries-table/champion-masteries-table.component';
@@ -9,7 +9,7 @@ describe('ChampionMasteriesTableComponent', () => {
   let component: ChampionMasteriesTableComponent;
   let fixture: ComponentFixture<ChampionMasteriesTableComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         ChampionMasteriesTableComponent,

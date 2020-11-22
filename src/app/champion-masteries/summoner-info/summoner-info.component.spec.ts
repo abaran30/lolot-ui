@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SummonerInfoComponent } from '@app/champion-masteries/summoner-info/summoner-info.component';
 import { mockChampionMasteriesResponse } from '@app/mocks/mock-champion-masteries-response';
@@ -7,7 +7,7 @@ describe('SummonerInfoComponent', () => {
   let component: SummonerInfoComponent;
   let fixture: ComponentFixture<SummonerInfoComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [SummonerInfoComponent]
     }).compileComponents();
