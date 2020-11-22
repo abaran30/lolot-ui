@@ -39,13 +39,15 @@ describe('HttpErrorInterceptor', () => {
     const routerNavigateSpy = spyOn(router, 'navigate');
     lolotService.getChampionMasteriesForSummoner('AngryTaco', 'NA').pipe(take(1)).subscribe(
       () => {
-        throw(new Error('Should not have landed here...'));
+        throw (new Error('Should not have landed here...'));
       },
       (error) => {
         expect(error.status).toEqual(404);
       }
     );
-    const request = httpTestingController.expectOne(`${environment.lolotApiBaseUrl}/api/champion-masteries?summonerName=AngryTaco&serviceRegion=NA`);
+    const request = httpTestingController.expectOne(
+      `${environment.lolotApiBaseUrl}/api/champion-masteries?summonerName=AngryTaco&serviceRegion=NA`
+    );
     request.error(new ErrorEvent(''), { status: 404 });
     const expectedNavigationExtras: NavigationExtras = {
       queryParams: { errorCode: 404 },
