@@ -1,4 +1,4 @@
-FROM node:12.16.1-alpine3.11 as app-builder
+FROM node:16-alpine3.15 as app-builder
 
 WORKDIR /opt/app
 COPY . /opt/app
@@ -6,7 +6,7 @@ COPY . /opt/app
 RUN npm i --no-optional
 RUN npm run build-prod
 
-FROM nginx:1.17.8-alpine
+FROM nginx:1.23.0-alpine
 
 RUN rm /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html
