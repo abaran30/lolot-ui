@@ -116,5 +116,7 @@
       }
     }
   },
-  "defaultProject": "lolot-ui"
+  "cli": {
+    "analytics": false
+  }
 }
