@@ -41,7 +41,7 @@ environment.production ? [] : HttpClientInMemoryWebApiModule.forRoot(InMemoryLol
 
 3. Setup the [LOLOT API](https://github.com/abaran30/lolot-api) by following **How to Set Up and Run Locally**.
 
-4. Once the LOLOT API is running on http://localhost:3030, run:
+4. Once the LOLOT API is running, run:
 ``` bash
 npm start
 ```
