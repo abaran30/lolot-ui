@@ -1,4 +1,4 @@
 export const environment = {
-  lolotApiBaseUrl: 'https://lolot-api.herokuapp.com',
+  lolotApiBaseUrl: 'https://api.lolotgg.com',
   production: true
 };
