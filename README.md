@@ -13,10 +13,7 @@ This web application was developed using [Angular](https://angular.io/).
 + Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), and [npm](https://www.npmjs.com/) are installed and configured on your machine.
 
 ### Steps - Mock Data
-1. Clone this repository to a location of your choosing with:
-``` bash
-git clone https://github.com/abaran30/lolot-ui.git
-```
+1. Clone this repository to a location of your choosing.
 
 2. Inside the cloned directory, run:
 ``` bash
