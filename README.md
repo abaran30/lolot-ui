@@ -2,8 +2,6 @@
 
 LOLOT is a web application that allows *League of Legends* players to keep track of their Hextech Chest rewards via Champion Mastery for the current season.
 
-LOLOT is currently available via https://lolotgg.com.
-
 ## Development
 
 This web application was developed using [Angular](https://angular.io/).
